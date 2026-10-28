@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """Aggregate results/*.json -> results/summary.csv, markdown table and PNG charts."""
 import csv
 import glob
