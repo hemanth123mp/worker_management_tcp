@@ -1,6 +1,0 @@
-2026-10-28 09:36:18,864 scheduler scheduler listening on 0.0.0.0:5000 policy=round_robin
-2026-10-28 09:36:19,908 scheduler worker w3 registered from 10.0.0.13 (cap=2 speed=1.00)
-2026-10-28 09:36:19,911 scheduler worker w1 registered from 10.0.0.11 (cap=2 speed=2.00)
-2026-10-28 09:36:19,914 scheduler worker w2 registered from 10.0.0.12 (cap=2 speed=1.50)
-2026-10-28 09:36:19,927 scheduler worker w4 registered from 10.0.0.14 (cap=2 speed=0.50)
-2026-10-28 09:36:31,457 scheduler worker w3 FAILED (heartbeat timeout); 34 task(s) re-queued

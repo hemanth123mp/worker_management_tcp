@@ -1,9 +1,0 @@
-2026-10-28 09:37:54,859 scheduler scheduler listening on 0.0.0.0:5000 policy=least_loaded
-2026-10-28 09:37:55,890 scheduler worker w2 registered from 10.0.0.12 (cap=2 speed=1.50)
-2026-10-28 09:37:55,892 scheduler worker w1 registered from 10.0.0.11 (cap=2 speed=2.00)
-2026-10-28 09:37:55,910 scheduler worker w4 registered from 10.0.0.14 (cap=2 speed=0.50)
-2026-10-28 09:37:55,919 scheduler worker w3 registered from 10.0.0.13 (cap=2 speed=1.00)
-2026-10-28 09:38:00,928 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 1
-2026-10-28 09:38:01,239 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 2
-2026-10-28 09:38:01,563 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 3
-2026-10-28 09:38:01,563 scheduler requesting SDN block of 10.0.0.66
