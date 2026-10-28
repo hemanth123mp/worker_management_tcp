@@ -82,15 +82,3 @@ Run the same four task delays (6, 2, 1, 3) and compare the three values printed 
 ```bash
 python3 analyze_metrics.py metrics.csv
 ```
-
-## Viva explanation
-
-- TCP is used because task delivery and completion messages must be reliable.
-- Heartbeats detect a silent worker; a closed TCP connection detects a crashed worker.
-- A failed task is put back into the queue and sent only to an idle healthy worker.
-- The application writes a failure event. The SDN manager reads it and installs a drop rule on `s1` for that failed worker.
-- Adaptive scheduling is compared with round robin using the same tasks.
-
-## Limits
-
-This is a classroom prototype. It has one switch, fake tasks, and direct `ovs-ofctl` rules instead of a full controller framework. Its SDN behavior is intentionally limited to isolating a failed worker.
