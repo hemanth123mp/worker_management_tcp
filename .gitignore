@@ -1,5 +1,4 @@
 __pycache__/
 *.log
 *.err
-metrics.csv
-sdn_events.jsonl
+/metrics.csv
