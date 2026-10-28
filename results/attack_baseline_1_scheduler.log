@@ -1,0 +1,14 @@
+2026-10-28 09:37:36,857 scheduler scheduler listening on 0.0.0.0:5000 policy=round_robin
+2026-10-28 09:37:37,940 scheduler worker w1 registered from 10.0.0.11 (cap=2 speed=2.00)
+2026-10-28 09:37:37,956 scheduler worker w2 registered from 10.0.0.12 (cap=2 speed=1.50)
+2026-10-28 09:37:37,957 scheduler worker w3 registered from 10.0.0.13 (cap=2 speed=1.00)
+2026-10-28 09:37:37,961 scheduler worker w4 registered from 10.0.0.14 (cap=2 speed=0.50)
+2026-10-28 09:37:42,976 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 1
+2026-10-28 09:37:43,299 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 2
+2026-10-28 09:37:43,646 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 3
+2026-10-28 09:37:43,646 scheduler requesting SDN block of 10.0.0.66
+2026-10-28 09:37:43,949 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 4
+2026-10-28 09:37:44,276 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 5
+2026-10-28 09:37:44,579 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 6
+2026-10-28 09:37:44,903 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 7
+2026-10-28 09:37:45,207 scheduler unauthorized access from 10.0.0.66 (bad auth token) strike 8

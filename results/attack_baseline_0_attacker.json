@@ -1,0 +1,53 @@
+{
+  "attempts": [
+    {
+      "i": 0,
+      "t": 1793160433.414,
+      "connected": true,
+      "reply": "REJECT"
+    },
+    {
+      "i": 1,
+      "t": 1793160433.757,
+      "connected": true,
+      "reply": "REJECT"
+    },
+    {
+      "i": 2,
+      "t": 1793160434.06,
+      "connected": true,
+      "reply": "REJECT"
+    },
+    {
+      "i": 3,
+      "t": 1793160434.382,
+      "connected": true,
+      "reply": "REJECT"
+    },
+    {
+      "i": 4,
+      "t": 1793160434.731,
+      "connected": true,
+      "reply": "REJECT"
+    },
+    {
+      "i": 5,
+      "t": 1793160435.034,
+      "connected": true,
+      "reply": "REJECT"
+    },
+    {
+      "i": 6,
+      "t": 1793160435.357,
+      "connected": true,
+      "reply": "REJECT"
+    },
+    {
+      "i": 7,
+      "t": 1793160435.735,
+      "connected": true,
+      "reply": "REJECT"
+    }
+  ],
+  "blocked_at_end": false
+}

@@ -1,0 +1,14 @@
+{
+  "submitted": 200,
+  "completed": 200,
+  "failed": 0,
+  "makespan_s": 5.843,
+  "throughput_tps": 34.228,
+  "lat_mean_s": 0.47,
+  "lat_p50_s": 0.492,
+  "lat_p95_s": 0.827,
+  "lat_p99_s": 1.023,
+  "lat_max_s": 1.171,
+  "jain_fairness": 0.9978,
+  "retried_tasks": 0
+}

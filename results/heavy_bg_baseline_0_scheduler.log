@@ -1,0 +1,5 @@
+2026-10-28 09:34:00,172 scheduler scheduler listening on 0.0.0.0:5000 policy=round_robin
+2026-10-28 09:34:01,196 scheduler worker w1 registered from 10.0.0.11 (cap=2 speed=2.00)
+2026-10-28 09:34:01,200 scheduler worker w4 registered from 10.0.0.14 (cap=2 speed=0.50)
+2026-10-28 09:34:01,207 scheduler worker w3 registered from 10.0.0.13 (cap=2 speed=1.00)
+2026-10-28 09:34:01,208 scheduler worker w2 registered from 10.0.0.12 (cap=2 speed=1.50)

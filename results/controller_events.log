@@ -1,0 +1,825 @@
+1793157471.357 START {"sdn_aware": true}
+1793157578.761 SWITCH_UP {"dpid": 1}
+1793157578.820 SWITCH_UP {"dpid": 2}
+1793157578.883 SWITCH_UP {"dpid": 3}
+1793157897.962 LINK_DOWN {"dpid": 1, "port": 1}
+1793157898.057 LINK_DOWN {"dpid": 1, "port": 2}
+1793157898.107 LINK_DOWN {"dpid": 1, "port": 3}
+1793157898.165 LINK_DOWN {"dpid": 2, "port": 1}
+1793157898.239 LINK_DOWN {"dpid": 2, "port": 2}
+1793157898.358 LINK_DOWN {"dpid": 3, "port": 1}
+1793157898.359 LINK_DOWN {"dpid": 3, "port": 2}
+1793157898.367 LINK_DOWN {"dpid": 2, "port": 3}
+1793157898.510 LINK_DOWN {"dpid": 1, "port": 4}
+1793157898.511 LINK_DOWN {"dpid": 3, "port": 3}
+1793157898.515 LINK_DOWN {"dpid": 2, "port": 4}
+1793157898.532 LINK_DOWN {"dpid": 1, "port": 5}
+1793157898.535 LINK_DOWN {"dpid": 3, "port": 4}
+1793157898.755 LINK_DOWN {"dpid": 1, "port": 6}
+1793159519.643 SWITCH_UP {"dpid": 1}
+1793159519.671 SWITCH_UP {"dpid": 2}
+1793159519.704 SWITCH_UP {"dpid": 3}
+1793159579.299 WORKER_UP {"worker": "10.0.0.11", "ip": "10.0.0.11"}
+1793159580.296 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159581.308 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159582.325 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159583.358 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159584.406 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159585.655 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159586.693 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159587.852 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159588.858 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159589.915 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159590.958 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159591.970 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}}}
+1793159592.144 WORKER_UP {"worker": "10.0.0.12", "ip": "10.0.0.12"}
+1793159593.064 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159594.085 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159595.138 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159596.146 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159597.151 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159598.200 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159599.217 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159600.227 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159601.242 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159602.289 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159603.327 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159604.335 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159605.337 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159606.345 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159607.351 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159608.358 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159609.389 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159610.422 LOAD {"pending": 5, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 2, "capacity": 2}}}
+1793159611.427 LOAD {"pending": 9, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 2, "capacity": 2}}}
+1793159612.430 LOAD {"pending": 21, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 2, "capacity": 2}}}
+1793159613.440 LOAD {"pending": 21, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 2, "capacity": 2}}}
+1793159614.446 LOAD {"pending": 3, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 2, "capacity": 2}}}
+1793159615.454 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159616.464 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159617.484 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159618.491 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159619.502 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159620.536 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159621.580 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159622.596 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159623.618 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159624.677 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159625.703 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159626.743 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159627.750 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159628.771 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159629.800 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159630.811 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159632.015 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159633.031 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159634.057 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159635.077 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159636.144 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159637.195 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159638.206 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159639.308 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159640.312 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159641.350 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159642.405 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159643.479 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159644.514 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159645.526 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159646.535 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159647.542 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159648.545 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159649.561 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159650.564 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159651.578 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159652.582 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159653.599 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159654.608 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159655.619 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159656.623 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159657.626 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159658.714 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159659.780 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159660.791 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159661.901 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159662.930 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159663.947 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159664.972 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159665.985 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159667.086 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159668.115 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159669.151 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159670.162 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159671.205 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159672.323 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159673.338 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159674.351 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159675.366 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159676.385 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159677.419 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159678.452 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159679.477 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159680.547 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159681.559 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159682.576 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159683.585 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159684.601 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159685.647 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159686.768 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159687.901 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159688.960 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159689.965 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159690.978 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159692.046 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159693.113 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159694.128 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159695.139 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159696.161 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159697.183 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159698.235 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159699.410 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159700.819 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159701.823 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159702.828 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159703.890 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159704.973 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159705.982 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159707.021 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159708.047 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159709.107 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159710.124 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159711.127 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159712.146 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159713.150 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159714.246 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159715.282 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159716.312 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159717.350 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159718.372 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159719.386 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159720.410 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159721.431 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159722.440 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159723.446 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159724.451 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159725.499 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159726.522 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159727.530 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159728.607 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159729.624 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159731.146 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159732.211 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159733.217 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159734.227 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159735.231 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159736.279 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159737.311 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159738.347 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159739.355 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159740.365 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159741.456 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159742.465 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159743.469 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159744.473 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159745.495 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159746.516 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159747.526 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159748.543 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159749.559 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159751.211 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159752.298 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159753.335 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159754.349 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159755.358 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159756.520 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159757.537 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159758.541 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159759.557 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159760.566 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159761.653 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159762.655 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159763.675 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159764.705 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159765.716 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159766.721 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159767.740 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159768.770 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159769.787 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159770.793 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159771.848 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159772.966 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159774.047 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159775.124 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159776.202 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159777.267 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159778.279 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159779.317 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159780.344 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159781.362 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159782.477 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159783.536 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159784.609 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159785.664 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159786.670 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159787.680 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159788.697 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159789.764 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159790.868 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159791.917 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159792.948 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159793.955 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159794.980 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159796.041 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159797.052 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159798.062 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159799.095 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159800.106 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159801.110 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159802.282 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159803.305 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159804.360 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159805.435 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159806.500 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159807.525 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159808.553 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159809.602 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159810.605 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159811.625 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159812.633 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159813.678 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159814.690 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159815.698 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159816.749 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159817.771 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159818.843 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159819.854 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159820.957 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159821.960 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159822.962 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159823.982 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159824.986 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159826.005 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159827.268 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159828.329 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159829.483 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159830.505 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159831.517 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159832.995 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159834.059 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159835.077 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159836.089 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159837.221 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159838.395 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159839.426 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159840.468 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159841.471 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159842.680 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159843.684 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159844.711 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159845.719 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "10.0.0.11", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "10.0.0.12", "active": 0, "capacity": 2}}}
+1793159846.577 LINK_DOWN {"dpid": 1, "port": 1}
+1793159846.623 LINK_DOWN {"dpid": 1, "port": 2}
+1793159846.648 LINK_DOWN {"dpid": 1, "port": 3}
+1793159846.680 LINK_DOWN {"dpid": 2, "port": 1}
+1793159846.718 LINK_DOWN {"dpid": 2, "port": 2}
+1793159846.770 LINK_DOWN {"dpid": 3, "port": 1}
+1793159846.770 LINK_DOWN {"dpid": 2, "port": 3}
+1793159846.837 LINK_DOWN {"dpid": 3, "port": 2}
+1793159846.837 LINK_DOWN {"dpid": 3, "port": 3}
+1793159846.915 LINK_DOWN {"dpid": 1, "port": 5}
+1793159846.915 LINK_DOWN {"dpid": 1, "port": 4}
+1793159846.916 LINK_DOWN {"dpid": 2, "port": 4}
+1793159846.916 LINK_DOWN {"dpid": 3, "port": 4}
+1793159847.013 LINK_DOWN {"dpid": 1, "port": 6}
+1793160000.303 SWITCH_UP {"dpid": 1}
+1793160000.338 SWITCH_UP {"dpid": 2}
+1793160000.368 SWITCH_UP {"dpid": 3}
+1793160005.792 CONFIG {"sdn_aware": false}
+1793160008.452 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160008.459 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160008.459 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160008.468 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160008.634 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160009.679 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160010.908 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 3, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}}}
+1793160011.946 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 7, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}}}
+1793160012.954 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 9, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160013.966 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 4, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 12, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}}}
+1793160014.974 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 16, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}}}
+1793160016.023 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 14, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160017.034 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 10, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160018.051 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 6, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160019.087 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 1, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160020.179 CONFIG {"sdn_aware": true}
+1793160022.781 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160022.782 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160022.782 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160022.782 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160023.038 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160024.040 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160025.044 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 1, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}}}
+1793160026.081 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}}}
+1793160027.094 LOAD {"pending": 3, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}}}
+1793160028.098 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}}}
+1793160029.101 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 1, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}}}
+1793160031.046 CONFIG {"sdn_aware": false}
+1793160033.655 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160033.656 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160033.661 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160033.662 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160033.876 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160034.947 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160035.997 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160037.003 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 6, "capacity": 2}}}
+1793160038.015 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 8, "capacity": 2}}}
+1793160039.034 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 12, "capacity": 2}}}
+1793160040.038 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 4, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 15, "capacity": 2}}}
+1793160041.050 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 16, "capacity": 2}}}
+1793160042.055 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 11, "capacity": 2}}}
+1793160043.108 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 7, "capacity": 2}}}
+1793160044.136 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160045.684 CONFIG {"sdn_aware": true}
+1793160048.246 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160048.250 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160048.250 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160048.250 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160048.537 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160049.565 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160050.571 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}}}
+1793160051.601 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160052.616 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160053.641 LOAD {"pending": 1, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160054.650 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}}}
+1793160056.522 CONFIG {"sdn_aware": false}
+1793160059.126 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160059.127 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160059.127 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160059.127 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160059.389 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160060.441 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}}}
+1793160061.450 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 4, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 4, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}}}
+1793160062.511 LOAD {"pending": 2, "workers": {"10.0.0.13": {"id": "w3", "active": 9, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 12, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}}}
+1793160087.247 WORKER_DOWN {"worker": "w3", "ip": "10.0.0.13", "reason": "heartbeat timeout", "requeued": 13}
+1793160087.248 WORKER_DOWN {"worker": "w4", "ip": "10.0.0.14", "reason": "heartbeat timeout", "requeued": 19}
+1793160087.249 WORKER_DOWN {"worker": "w2", "ip": "10.0.0.12", "reason": "heartbeat timeout", "requeued": 6}
+1793160087.250 WORKER_DOWN {"worker": "w1", "ip": "10.0.0.11", "reason": "heartbeat timeout", "requeued": 5}
+1793160089.259 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.35}
+1793160091.262 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 8.92}
+1793160182.118 CONFIG {"sdn_aware": true}
+1793160184.706 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160184.706 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160184.708 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160184.708 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160184.940 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160185.946 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160186.953 LOAD {"pending": 2, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160187.956 LOAD {"pending": 32, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160188.958 LOAD {"pending": 60, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160189.501 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.22}
+1793160189.961 LOAD {"pending": 89, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160190.965 LOAD {"pending": 117, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160191.503 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.5}
+1793160191.968 LOAD {"pending": 146, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160192.972 LOAD {"pending": 173, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160193.975 LOAD {"pending": 137, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160194.980 LOAD {"pending": 101, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160195.983 LOAD {"pending": 64, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160196.993 LOAD {"pending": 24, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160198.835 CONFIG {"sdn_aware": false}
+1793160201.426 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160201.427 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160201.428 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160201.429 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160201.658 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160202.678 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160203.684 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 3, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}}}
+1793160204.687 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 11, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 8, "capacity": 2}}}
+1793160205.555 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.36}
+1793160205.692 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 3, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 17, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 12, "capacity": 2}}}
+1793160206.695 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 25, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 16, "capacity": 2}}}
+1793160207.559 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.37}
+1793160207.696 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 32, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 21, "capacity": 2}}}
+1793160208.698 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 40, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 24, "capacity": 2}}}
+1793160209.560 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.4}
+1793160209.703 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 3, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 5, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 47, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 27, "capacity": 2}}}
+1793160210.709 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 45, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 22, "capacity": 2}}}
+1793160211.714 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 39, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 13, "capacity": 2}}}
+1793160212.729 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 35, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 5, "capacity": 2}}}
+1793160213.740 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 33, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160214.757 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 29, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160215.764 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 24, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160216.782 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 21, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160217.793 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 17, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160218.829 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 13, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160219.847 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 8, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160220.856 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 4, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160222.598 CONFIG {"sdn_aware": true}
+1793160225.164 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160225.168 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160225.175 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160225.180 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160225.406 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160226.412 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160227.459 LOAD {"pending": 5, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160228.462 LOAD {"pending": 23, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160229.472 LOAD {"pending": 43, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160229.597 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.39}
+1793160230.475 LOAD {"pending": 64, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160231.477 LOAD {"pending": 86, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160231.598 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.26}
+1793160232.483 LOAD {"pending": 104, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160233.492 LOAD {"pending": 122, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160233.601 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.27}
+1793160234.496 LOAD {"pending": 93, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160235.499 LOAD {"pending": 55, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160236.518 LOAD {"pending": 18, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160237.529 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160238.617 CONFIG {"sdn_aware": false}
+1793160241.197 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160241.201 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160241.208 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160241.209 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160241.440 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160242.453 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160243.455 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160244.457 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160245.459 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160245.618 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.4}
+1793160245.619 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.4}
+1793160246.462 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 8, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 6, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 6, "capacity": 2}}}
+1793160247.466 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 16, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 10, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 13, "capacity": 2}}}
+1793160247.619 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.26}
+1793160247.619 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.46}
+1793160248.472 LOAD {"pending": 9, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 19, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 12, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 16, "capacity": 2}}}
+1793160249.475 LOAD {"pending": 35, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 21, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 12, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 16, "capacity": 2}}}
+1793160249.619 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.56}
+1793160249.620 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.41}
+1793160250.477 LOAD {"pending": 54, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 24, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 10, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 16, "capacity": 2}}}
+1793160251.480 LOAD {"pending": 72, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 27, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 8, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 16, "capacity": 2}}}
+1793160251.621 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.55}
+1793160251.621 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.39}
+1793160252.484 LOAD {"pending": 66, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 30, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 8, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 16, "capacity": 2}}}
+1793160253.486 LOAD {"pending": 38, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 32, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 8, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 17, "capacity": 2}}}
+1793160253.625 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.57}
+1793160254.488 LOAD {"pending": 14, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 33, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 5, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 16, "capacity": 2}}}
+1793160255.491 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 34, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 12, "capacity": 2}}}
+1793160255.627 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.37}
+1793160256.495 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 30, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}}}
+1793160257.498 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 26, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160257.630 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.41}
+1793160257.630 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 8.51}
+1793160258.502 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 23, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160259.505 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 19, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160259.630 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.47}
+1793160259.631 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.46}
+1793160260.514 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 16, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160261.521 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 12, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160261.634 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.18}
+1793160261.635 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.18}
+1793160262.525 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 7, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160263.528 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160263.637 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.12}
+1793160263.638 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.12}
+1793160264.880 CONFIG {"sdn_aware": true}
+1793160267.454 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160267.455 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160267.462 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160267.463 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160267.694 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160268.726 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160269.728 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160270.731 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160271.646 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 8.3}
+1793160271.646 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 8.3}
+1793160271.734 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160272.737 LOAD {"pending": 15, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160273.648 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 8.07}
+1793160273.648 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.5}
+1793160273.742 LOAD {"pending": 31, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160274.746 LOAD {"pending": 50, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160275.648 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.19}
+1793160275.649 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.6}
+1793160275.748 LOAD {"pending": 70, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160276.758 LOAD {"pending": 90, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160277.651 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.5}
+1793160277.651 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.56}
+1793160277.767 LOAD {"pending": 110, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160278.771 LOAD {"pending": 107, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160279.653 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.76}
+1793160279.774 LOAD {"pending": 73, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160280.779 LOAD {"pending": 33, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160281.655 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.49}
+1793160281.790 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160283.223 CONFIG {"sdn_aware": false}
+1793160285.804 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160285.805 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160285.806 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160285.807 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160286.037 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160287.065 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160288.088 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160289.097 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160290.117 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160291.119 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 7, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 9, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 7, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 5, "capacity": 2}}}
+1793160291.674 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.07}
+1793160292.121 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 11, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 16, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 11, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 5, "capacity": 2}}}
+1793160293.125 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 14, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 22, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 16, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 7, "capacity": 2}}}
+1793160293.675 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.55}
+1793160293.675 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.41}
+1793160294.128 LOAD {"pending": 2, "workers": {"10.0.0.11": {"id": "w1", "active": 17, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 30, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 21, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 7, "capacity": 2}}}
+1793160295.132 LOAD {"pending": 14, "workers": {"10.0.0.11": {"id": "w1", "active": 17, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 35, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 22, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}}}
+1793160295.676 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.53}
+1793160295.677 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.28}
+1793160296.135 LOAD {"pending": 21, "workers": {"10.0.0.11": {"id": "w1", "active": 19, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 41, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 22, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}}}
+1793160297.138 LOAD {"pending": 7, "workers": {"10.0.0.11": {"id": "w1", "active": 18, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 45, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 23, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160297.677 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.44}
+1793160298.142 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 9, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 42, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 17, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160299.145 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 37, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 8, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160299.679 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.32}
+1793160299.680 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 8.07}
+1793160300.147 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 34, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160301.166 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 30, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160301.681 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.36}
+1793160301.682 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.36}
+1793160302.194 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 26, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160303.196 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 23, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160303.682 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.24}
+1793160303.683 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.24}
+1793160304.198 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 19, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160305.202 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 15, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160305.685 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.42}
+1793160305.686 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.42}
+1793160306.214 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 10, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160307.237 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 6, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160307.690 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.27}
+1793160307.691 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.27}
+1793160308.240 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160309.467 CONFIG {"sdn_aware": true}
+1793160312.037 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160312.048 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160312.048 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160312.052 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160312.282 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160313.303 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160314.320 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160315.324 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160316.357 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160317.362 LOAD {"pending": 20, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160317.701 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.31}
+1793160318.365 LOAD {"pending": 48, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160319.372 LOAD {"pending": 77, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160319.702 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.5}
+1793160319.703 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.57}
+1793160320.376 LOAD {"pending": 108, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160321.377 LOAD {"pending": 137, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160321.703 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 9.76}
+1793160321.704 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.56}
+1793160322.384 LOAD {"pending": 165, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160323.386 LOAD {"pending": 151, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160323.704 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.59}
+1793160324.390 LOAD {"pending": 115, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160325.393 LOAD {"pending": 77, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160325.706 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.54}
+1793160326.397 LOAD {"pending": 40, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160327.402 LOAD {"pending": 3, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160327.709 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.35}
+1793160328.748 CONFIG {"sdn_aware": false}
+1793160331.337 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160331.344 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160331.348 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160331.357 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160331.595 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160332.615 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160333.630 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160334.633 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160335.641 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160335.736 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.46}
+1793160335.737 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.45}
+1793160336.650 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 7, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 4, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}}}
+1793160337.652 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 12, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 6, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 6, "capacity": 2}}}
+1793160337.737 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.42}
+1793160338.654 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 17, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 10, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 5, "capacity": 2}}}
+1793160339.657 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 23, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 12, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}}}
+1793160339.739 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 8.07}
+1793160339.739 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.64}
+1793160340.660 LOAD {"pending": 2, "workers": {"10.0.0.14": {"id": "w4", "active": 28, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 3, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 22, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 4, "capacity": 2}}}
+1793160341.665 LOAD {"pending": 43, "workers": {"10.0.0.14": {"id": "w4", "active": 24, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 22, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160341.740 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.48}
+1793160342.669 WORKER_DOWN {"worker": "w3", "ip": "10.0.0.13", "reason": "heartbeat timeout", "requeued": 22}
+1793160342.670 LOAD {"pending": 104, "workers": {"10.0.0.14": {"id": "w4", "active": 20, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160343.674 LOAD {"pending": 47, "workers": {"10.0.0.14": {"id": "w4", "active": 42, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 20, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 23, "capacity": 2}}}
+1793160343.743 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.65}
+1793160344.678 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 53, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 21, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 27, "capacity": 2}}}
+1793160345.680 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 50, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 16, "capacity": 2}}}
+1793160345.744 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.36}
+1793160346.687 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 46, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 6, "capacity": 2}}}
+1793160347.689 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 42, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160347.745 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.66}
+1793160347.747 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.38}
+1793160348.698 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 38, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160349.700 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 34, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160349.747 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.39}
+1793160349.748 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.39}
+1793160350.711 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 30, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160351.714 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 26, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160351.747 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.39}
+1793160351.749 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.39}
+1793160352.717 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 23, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160353.722 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 19, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160353.749 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.65}
+1793160353.752 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.64}
+1793160354.725 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 15, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160355.731 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 10, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160355.750 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.65}
+1793160355.752 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.65}
+1793160356.734 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 7, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160357.738 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160357.751 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.39}
+1793160357.754 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.39}
+1793160359.121 CONFIG {"sdn_aware": true}
+1793160361.759 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160361.759 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160361.760 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160361.760 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160361.991 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160363.029 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160364.043 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160365.056 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160366.065 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160367.068 LOAD {"pending": 2, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160367.766 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.56}
+1793160368.070 LOAD {"pending": 8, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160369.073 LOAD {"pending": 13, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160369.766 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.44}
+1793160370.075 LOAD {"pending": 17, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160371.079 LOAD {"pending": 28, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160371.767 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 8.07}
+1793160371.767 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.38}
+1793160372.082 LOAD {"pending": 40, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160373.087 WORKER_DOWN {"worker": "w3", "ip": "10.0.0.13", "reason": "heartbeat timeout", "requeued": 2}
+1793160373.091 FLUSH_HOST {"ip": "10.0.0.13", "mac": "00:00:00:00:00:07"}
+1793160373.092 LOAD {"pending": 53, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160373.768 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.66}
+1793160374.091 LOAD {"pending": 53, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160375.093 LOAD {"pending": 24, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160375.770 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.77}
+1793160376.099 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 1, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160377.290 CONFIG {"sdn_aware": false}
+1793160379.918 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160379.922 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160379.924 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160379.928 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160380.150 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160381.162 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160382.173 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160383.176 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160384.179 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160385.182 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 4, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 6, "capacity": 2}}}
+1793160385.790 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.39}
+1793160386.184 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 7, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 3, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 11, "capacity": 2}}}
+1793160387.186 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 10, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 16, "capacity": 2}}}
+1793160387.793 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 8.01}
+1793160387.793 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.38}
+1793160388.194 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 13, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 22, "capacity": 2}}}
+1793160389.199 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 22, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 4, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 29, "capacity": 2}}}
+1793160389.794 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.44}
+1793160390.203 LOAD {"pending": 33, "workers": {"10.0.0.13": {"id": "w3", "active": 24, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 26, "capacity": 2}}}
+1793160391.206 LOAD {"pending": 32, "workers": {"10.0.0.13": {"id": "w3", "active": 34, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 7, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 5, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 31, "capacity": 2}}}
+1793160391.459 WORKER_DOWN {"worker": "w3", "ip": "10.0.0.13", "reason": "heartbeat timeout", "requeued": 34}
+1793160391.795 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.25}
+1793160392.212 LOAD {"pending": 57, "workers": {"10.0.0.11": {"id": "w1", "active": 11, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 7, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 39, "capacity": 2}}}
+1793160393.215 LOAD {"pending": 33, "workers": {"10.0.0.11": {"id": "w1", "active": 10, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 42, "capacity": 2}}}
+1793160393.798 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.26}
+1793160394.218 LOAD {"pending": 3, "workers": {"10.0.0.11": {"id": "w1", "active": 10, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 49, "capacity": 2}}}
+1793160395.221 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 46, "capacity": 2}}}
+1793160395.800 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.42}
+1793160396.223 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 42, "capacity": 2}}}
+1793160397.227 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 39, "capacity": 2}}}
+1793160397.801 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.42}
+1793160397.803 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.41}
+1793160398.230 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 35, "capacity": 2}}}
+1793160399.232 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 31, "capacity": 2}}}
+1793160399.803 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.23}
+1793160399.804 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.23}
+1793160400.237 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 28, "capacity": 2}}}
+1793160401.240 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 22, "capacity": 2}}}
+1793160401.804 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.41}
+1793160401.805 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.41}
+1793160402.242 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 20, "capacity": 2}}}
+1793160403.255 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 15, "capacity": 2}}}
+1793160403.805 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.41}
+1793160403.806 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.4}
+1793160404.260 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 10, "capacity": 2}}}
+1793160405.265 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 7, "capacity": 2}}}
+1793160405.807 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.33}
+1793160405.809 CONGESTION {"dpid": 2, "port": 3, "tx_mbps": 9.33}
+1793160406.268 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160407.681 CONFIG {"sdn_aware": true}
+1793160410.274 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160410.276 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160410.290 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160410.292 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160410.524 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160411.530 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160412.538 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160413.541 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160414.590 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160415.593 LOAD {"pending": 5, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160415.824 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.33}
+1793160416.597 LOAD {"pending": 10, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160417.602 LOAD {"pending": 15, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160417.826 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.38}
+1793160418.611 LOAD {"pending": 20, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160419.615 LOAD {"pending": 27, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160419.827 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.65}
+1793160420.627 LOAD {"pending": 41, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160421.629 LOAD {"pending": 54, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160421.829 CONGESTION {"dpid": 1, "port": 1, "tx_mbps": 8.06}
+1793160421.829 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.54}
+1793160421.880 WORKER_DOWN {"worker": "w3", "ip": "10.0.0.13", "reason": "heartbeat timeout", "requeued": 2}
+1793160421.884 FLUSH_HOST {"ip": "10.0.0.13", "mac": "00:00:00:00:00:07"}
+1793160422.634 LOAD {"pending": 54, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160423.643 LOAD {"pending": 23, "workers": {"10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160423.829 CONGESTION {"dpid": 1, "port": 4, "tx_mbps": 9.2}
+1793160424.645 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160425.816 CONFIG {"sdn_aware": false}
+1793160428.419 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160428.422 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160428.428 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160428.439 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160428.653 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160429.677 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160430.682 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 3, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}}}
+1793160431.685 LOAD {"pending": 1, "workers": {"10.0.0.14": {"id": "w4", "active": 8, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 6, "capacity": 2}}}
+1793160432.692 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 14, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 8, "capacity": 2}}}
+1793160433.705 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 20, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 11, "capacity": 2}}}
+1793160434.082 BLOCK {"ip": "10.0.0.66", "reason": "bad auth token"}
+1793160434.710 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 25, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 14, "capacity": 2}}}
+1793160435.736 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 29, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 11, "capacity": 2}}}
+1793160436.756 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 24, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}}}
+1793160437.770 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 20, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160438.777 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 14, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160439.801 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 10, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160440.810 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 8, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160441.828 LOAD {"pending": 0, "workers": {"10.0.0.14": {"id": "w4", "active": 4, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160443.799 CONFIG {"sdn_aware": true}
+1793160446.404 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160446.413 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160446.425 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160446.425 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160446.643 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160447.646 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}}}
+1793160448.659 LOAD {"pending": 0, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160449.663 LOAD {"pending": 3, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160450.669 LOAD {"pending": 10, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160451.672 LOAD {"pending": 15, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160452.089 BLOCK {"ip": "10.0.0.66", "reason": "bad auth token"}
+1793160452.676 LOAD {"pending": 15, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160453.681 LOAD {"pending": 6, "workers": {"10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}}}
+1793160455.287 CONFIG {"sdn_aware": false}
+1793160457.949 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160457.959 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160457.960 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160457.962 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160458.131 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160459.194 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}}}
+1793160460.202 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 3, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 3, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}}}
+1793160461.204 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 6, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 8, "capacity": 2}}}
+1793160462.208 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 8, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 14, "capacity": 2}}}
+1793160463.211 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 1, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 1, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 11, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 20, "capacity": 2}}}
+1793160463.647 BLOCK {"ip": "10.0.0.66", "reason": "bad auth token"}
+1793160464.212 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 14, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 25, "capacity": 2}}}
+1793160465.215 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 12, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 29, "capacity": 2}}}
+1793160466.220 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 4, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 24, "capacity": 2}}}
+1793160467.247 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 20, "capacity": 2}}}
+1793160468.260 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 15, "capacity": 2}}}
+1793160469.272 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 10, "capacity": 2}}}
+1793160470.280 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 8, "capacity": 2}}}
+1793160471.287 LOAD {"pending": 0, "workers": {"10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 5, "capacity": 2}}}
+1793160473.294 CONFIG {"sdn_aware": true}
+1793160475.897 WORKER_UP {"worker": "w2", "ip": "10.0.0.12"}
+1793160475.898 WORKER_UP {"worker": "w1", "ip": "10.0.0.11"}
+1793160475.911 WORKER_UP {"worker": "w4", "ip": "10.0.0.14"}
+1793160475.921 WORKER_UP {"worker": "w3", "ip": "10.0.0.13"}
+1793160476.127 LOAD {"pending": 0, "workers": {"10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160477.140 LOAD {"pending": 0, "workers": {"10.0.0.12": {"id": "w2", "active": 0, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 0, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 0, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 0, "capacity": 2}}}
+1793160478.142 LOAD {"pending": 0, "workers": {"10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160479.146 LOAD {"pending": 3, "workers": {"10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160480.148 LOAD {"pending": 11, "workers": {"10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160481.153 LOAD {"pending": 17, "workers": {"10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160481.565 BLOCK {"ip": "10.0.0.66", "reason": "bad auth token"}
+1793160482.157 LOAD {"pending": 15, "workers": {"10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160483.161 LOAD {"pending": 10, "workers": {"10.0.0.12": {"id": "w2", "active": 2, "capacity": 2}, "10.0.0.11": {"id": "w1", "active": 2, "capacity": 2}, "10.0.0.14": {"id": "w4", "active": 2, "capacity": 2}, "10.0.0.13": {"id": "w3", "active": 2, "capacity": 2}}}
+1793160484.903 LINK_DOWN {"dpid": 1, "port": 1}
+1793160484.966 LINK_DOWN {"dpid": 1, "port": 2}
+1793160485.005 LINK_DOWN {"dpid": 1, "port": 3}
+1793160485.058 LINK_DOWN {"dpid": 2, "port": 1}
+1793160485.133 LINK_DOWN {"dpid": 2, "port": 2}
+1793160485.136 LINK_DOWN {"dpid": 2, "port": 3}
+1793160485.234 LINK_DOWN {"dpid": 3, "port": 1}
+1793160485.235 LINK_DOWN {"dpid": 3, "port": 2}
+1793160485.379 LINK_DOWN {"dpid": 1, "port": 5}
+1793160485.379 LINK_DOWN {"dpid": 1, "port": 4}
+1793160485.380 LINK_DOWN {"dpid": 3, "port": 3}
+1793160485.380 LINK_DOWN {"dpid": 3, "port": 4}
+1793160485.381 LINK_DOWN {"dpid": 2, "port": 4}
+1793160485.558 LINK_DOWN {"dpid": 1, "port": 6}
