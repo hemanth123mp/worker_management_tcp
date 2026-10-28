@@ -22,6 +22,8 @@ def main():
     args = parser.parse_args()
 
     with socket.create_connection((args.server_ip, PORT), timeout=5) as connection:
+        # The timeout is only for connecting. Workers may wait idle for longer than five seconds.
+        connection.settimeout(None)
         send_lock = threading.Lock()
         my_ip = connection.getsockname()[0]
         send_json(connection, {"type": "register", "worker": args.worker_name, "ip": my_ip}, send_lock)
@@ -44,18 +46,21 @@ def main():
                 time.sleep(1)
 
         threading.Thread(target=heartbeat, daemon=True).start()
-        with connection.makefile("r") as reader:
-            for line in reader:
-                message = json.loads(line)
-                if message.get("type") != "task":
-                    continue
-                task = message["task"]
-                print(f"{args.worker_name}: running {task['task_id']} for {task['delay']} seconds", flush=True)
-                time.sleep(task["delay"])
-                if alive:
-                    send_json(connection, {"type": "done", "worker": args.worker_name,
-                                           "task_id": task["task_id"], "attempt": task["attempt"]}, send_lock)
-                    print(f"{args.worker_name}: done {task['task_id']}", flush=True)
+        try:
+            with connection.makefile("r") as reader:
+                for line in reader:
+                    message = json.loads(line)
+                    if message.get("type") != "task":
+                        continue
+                    task = message["task"]
+                    print(f"{args.worker_name}: running {task['task_id']} for {task['delay']} seconds", flush=True)
+                    time.sleep(task["delay"])
+                    if alive:
+                        send_json(connection, {"type": "done", "worker": args.worker_name,
+                                               "task_id": task["task_id"], "attempt": task["attempt"]}, send_lock)
+                        print(f"{args.worker_name}: done {task['task_id']}", flush=True)
+        except OSError:
+            pass
 
 
 if __name__ == "__main__":
