@@ -1,0 +1,7 @@
+scenario,scheduler,completed,requeued,avg_s,makespan_s,tasks_per_worker
+burst,adaptive,20,0,2.45,16.02,worker1:10 worker2:6 worker3:4
+burst,round_robin,20,0,2.45,16.01,worker1:10 worker2:6 worker3:4
+light,adaptive,20,0,1.00,29.51,worker1:20
+light,round_robin,20,0,2.25,30.51,worker1:7 worker2:7 worker3:6
+failure,adaptive,20,1,1.35,29.52,worker1:16 worker2:3 worker3:1
+failure,round_robin,20,1,2.40,31.01,worker1:6 worker2:8 worker3:6

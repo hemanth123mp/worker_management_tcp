@@ -1,4 +1,4 @@
-"""TCP task server: queue, scheduler, worker failure recovery, SDN notification (all TCP)."""
+# task server: queue, scheduler, failure handling, tells the sdn manager. all tcp.
 
 import argparse
 import csv
@@ -9,55 +9,53 @@ import threading
 import time
 from pathlib import Path
 
-PORT = 5000              # clients and workers talk to the server here (TCP)
-SDN_PORT = 9999          # the SDN manager listens here (TCP)
-HEARTBEAT_TIMEOUT = 3    # seconds of silence before a worker is declared failed
-GRACE_SECONDS = 3        # extra time allowed on top of the expected task time
+PORT = 5000              # clients and workers connect here
+SDN_PORT = 9999          # sdn manager listens here
+HEARTBEAT_TIMEOUT = 3    # silent for this long = worker is dead
+GRACE_SECONDS = 3        # slack added to the expected task time
 
-tasks = queue.Queue()
-workers = {}
-task_book = {}
-lock = threading.RLock()
-round_robin_index = 0
-scheduler = "adaptive"
+tasks = queue.Queue()    # waiting for a worker
+workers = {}             # name -> worker dict
+book = {}                # task_id -> task dict, every task ever submitted
+lock = threading.RLock() # rlock: handle() holds it and metric() takes it again
+rr_idx = 0               # where the round robin scan starts
+sched = "adaptive"
 sdn_host = ""
-sdn_events = queue.Queue()
-metrics_file = None
-metrics_writer = None
+sdn_q = queue.Queue()    # events waiting to go to the sdn manager
+mfile = None
+mwriter = None
 
 
-def send_json(connection, message, send_lock=None):
-    data = (json.dumps(message) + "\n").encode()
-    if send_lock:
-        with send_lock:
-            connection.sendall(data)
+def send_json(conn, msg, slock=None):
+    data = (json.dumps(msg) + "\n").encode()   # one json per line, the newline marks the end
+    if slock:
+        with slock:                            # 2 threads can write to the same worker socket
+            conn.sendall(data)
     else:
-        connection.sendall(data)
+        conn.sendall(data)
 
 
 def metric(event, task_id="", worker="", note=""):
     with lock:
-        metrics_writer.writerow([round(time.time(), 3), event, task_id, worker, note])
-        metrics_file.flush()
+        mwriter.writerow([round(time.time(), 3), event, task_id, worker, note])
+        mfile.flush()
     print(f"{event}: task={task_id} worker={worker} {note}", flush=True)
 
 
-# ---------------------------------------------------------------- SDN (TCP)
-def notify_sdn(event, worker_ip, log=True):
-    """Queue an event for the SDN manager. Never blocks the scheduler."""
+def notify_sdn(ev, ip, log=True):
     if not sdn_host:
         return
-    sdn_events.put({"event": event, "worker_ip": worker_ip})
+    sdn_q.put({"event": ev, "worker_ip": ip})  # just queue it, never wait on the network here
     if log:
-        metric("sdn_notification", worker=worker_ip, note=event)
+        metric("sdn_notification", worker=ip, note=ev)
 
 
 def sdn_sender():
-    """Keep one TCP connection to the SDN manager and send queued events."""
+    # background thread, keeps one tcp connection to the manager
     sock = None
     while True:
-        line = (json.dumps(sdn_events.get()) + "\n").encode()
-        for _ in range(2):                       # second try = reconnect
+        line = (json.dumps(sdn_q.get()) + "\n").encode()
+        for _ in range(2):             # 2nd try = reconnect
             try:
                 if sock is None:
                     sock = socket.create_connection((sdn_host, SDN_PORT), timeout=2)
@@ -66,217 +64,222 @@ def sdn_sender():
             except OSError:
                 if sock:
                     sock.close()
-                sock = None
+                sock = None            # manager down -> event is dropped after 2 tries
 
 
-# ---------------------------------------------------------------- scheduling
-def choose_idle_worker():
-    global round_robin_index
-    if scheduler == "round_robin":               # baseline: rotate over all workers
+def pick_worker():
+    global rr_idx
+    if sched == "round_robin":         # baseline: go around all workers in turn
         names = sorted(workers)
         for step in range(len(names)):
-            worker = workers[names[(round_robin_index + step) % len(names)]]
-            if worker["state"] == "idle":
-                round_robin_index = (round_robin_index + step + 1) % len(names)
-                return worker
+            w = workers[names[(rr_idx + step) % len(names)]]
+            if w["state"] == "idle":
+                rr_idx = (rr_idx + step + 1) % len(names)
+                return w
         return None
     idle = sorted((w for w in workers.values() if w["state"] == "idle"), key=lambda w: w["name"])
     if not idle:
         return None
-    # adaptive: fastest idle worker, tie -> fewer completed tasks
+    # adaptive: fastest idle worker, tie -> fewer completed (minus makes "fewer" bigger)
     return max(idle, key=lambda w: (w["speed"], -w["completed"]))
 
 
-def requeue_task(worker, reason):
-    """Return the worker's running task to the queue. Returns the task id (or None)."""
-    task_id = worker.get("current_task")
-    task = task_book.get(task_id)
-    if not task or task["status"] != "running":
+def requeue(w, why):
+    # put the worker's running task back in the queue, returns its id (or None)
+    tid = w.get("current_task")
+    t = book.get(tid)
+    if not t or t["status"] != "running":
         return None
-    task["status"] = "queued"
-    task["worker"] = ""
-    task["attempt"] += 1
-    worker["current_task"] = None
-    tasks.put(task)
-    metric("requeued", task_id, worker["name"], reason)
-    return task_id
+    t["status"] = "queued"
+    t["worker"] = ""
+    t["attempt"] += 1          # a late result from the old attempt gets ignored
+    w["current_task"] = None
+    tasks.put(t)
+    metric("requeued", tid, w["name"], why)
+    return tid
 
 
-def fail_worker(worker, reason, block=True):
-    """Mark a worker offline once, requeue its task, tell the SDN manager."""
-    if worker["state"] == "offline":
+def fail_worker(w, why, block=True):
+    if w["state"] == "offline":    # more than one check can catch the same failure, count it once
         return
-    worker["state"] = "offline"
-    worker["stale_task"] = requeue_task(worker, reason)
-    metric("worker_failed", worker=worker["name"], note=reason)
-    if block and worker["ip"]:
-        notify_sdn("worker_failed", worker["ip"])
+    w["state"] = "offline"
+    w["stale_task"] = requeue(w, why)
+    metric("worker_failed", worker=w["name"], note=why)
+    if block and w["ip"]:
+        notify_sdn("worker_failed", w["ip"])
 
 
-def task_timeout(worker):
-    """Task ran too long: requeue it elsewhere; the worker is 'slow' until it reports back."""
-    task_id = worker["current_task"]
-    requeue_task(worker, "task timeout")
-    worker["state"] = "slow"
-    worker["stale_task"] = task_id
-    metric("task_timeout", task_id, worker["name"])
+def task_timeout(w):
+    # too slow but still alive: hand the task to someone else, park the worker. no sdn block.
+    tid = w["current_task"]
+    requeue(w, "task timeout")
+    w["state"] = "slow"
+    w["stale_task"] = tid
+    metric("task_timeout", tid, w["name"])
 
 
 def dispatch():
     with lock:
         while not tasks.empty():
-            worker = choose_idle_worker()
-            if worker is None:
-                return
-            task = tasks.get_nowait()
-            task["status"] = "running"
-            task["worker"] = worker["name"]
-            task["started_at"] = time.time()
-            worker["state"] = "busy"
-            worker["current_task"] = task["task_id"]
-            worker["assigned"] += 1
+            w = pick_worker()
+            if w is None:
+                return                 # nobody free, rest stays queued
+            t = tasks.get_nowait()
+            t["status"] = "running"
+            t["worker"] = w["name"]
+            t["started_at"] = time.time()
+            w["state"] = "busy"
+            w["current_task"] = t["task_id"]
+            w["assigned"] += 1
             try:
-                send_json(worker["connection"], {"type": "task", "task": task}, worker["send_lock"])
-                metric("assigned", task["task_id"], worker["name"], f"attempt={task['attempt']}")
-                notify_sdn("worker_busy", worker["ip"], log=False)
+                send_json(w["connection"], {"type": "task", "task": t}, w["send_lock"])
+                metric("assigned", t["task_id"], w["name"], f"attempt={t['attempt']}")
+                notify_sdn("worker_busy", w["ip"], log=False)
             except OSError:
-                fail_worker(worker, "send failed")
+                fail_worker(w, "send failed")   # this also requeues the task we just gave it
 
 
-def monitor_workers():
+def watchdog():
     while True:
         time.sleep(1)
         with lock:
             now = time.time()
-            for worker in list(workers.values()):
-                if worker["state"] == "offline":
+            for w in list(workers.values()):    # copy, the dict can change under us
+                if w["state"] == "offline":
                     continue
-                if now - worker["last_seen"] > HEARTBEAT_TIMEOUT:
-                    fail_worker(worker, "heartbeat lost")
+                if now - w["last_seen"] > HEARTBEAT_TIMEOUT:
+                    fail_worker(w, "heartbeat lost")
                     continue
-                task = task_book.get(worker.get("current_task"))
-                if worker["state"] == "busy" and task:
-                    allowed = task["delay"] / worker["speed"] + GRACE_SECONDS
-                    if now - task["started_at"] > allowed:
-                        task_timeout(worker)
+                t = book.get(w.get("current_task"))
+                if w["state"] == "busy" and t:
+                    allowed = t["delay"] / w["speed"] + GRACE_SECONDS   # slower worker = longer
+                    if now - t["started_at"] > allowed:
+                        task_timeout(w)
         dispatch()
 
 
-# ---------------------------------------------------------------- messages
-def handle_message(connection, address, message):
-    kind = message.get("type")
+def handle(conn, addr, msg):
+    kind = msg.get("type")
+
     if kind == "register":
-        name = message.get("worker")
+        name = msg.get("worker")
         if not name:
             return {"type": "error", "message": "worker name required"}
-        speed = float(message.get("speed", 1.0))
+        speed = float(msg.get("speed", 1.0))
         if speed <= 0:
             return {"type": "error", "message": "speed must be positive"}
         old = workers.get(name)
-        if old and old["connection"] is not connection:
+        if old and old["connection"] is not conn:        # same worker came back on a new socket
             fail_worker(old, "replaced by reconnect", block=False)
-        workers[name] = {"name": name, "ip": address[0], "connection": connection,
+        workers[name] = {"name": name, "ip": addr[0], "connection": conn,
                          "send_lock": threading.Lock(), "state": "idle", "current_task": None,
                          "stale_task": None, "speed": speed, "last_seen": time.time(),
                          "assigned": old["assigned"] if old else 0,
                          "completed": old["completed"] if old else 0}
-        metric("registered", worker=name, note=f"{address[0]} speed={speed}")
-        notify_sdn("worker_registered", address[0])
+        metric("registered", worker=name, note=f"{addr[0]} speed={speed}")
+        notify_sdn("worker_registered", addr[0])
         return {"type": "registered", "worker": name}
+
     if kind == "heartbeat":
-        worker = workers.get(message.get("worker"))
-        if worker and worker["connection"] is connection:
-            worker["last_seen"] = time.time()
-            if worker["state"] == "offline":     # a hung worker woke up on the same connection
-                worker["state"] = "slow" if worker["stale_task"] else "idle"
-                metric("worker_recovered", worker=worker["name"], note="heartbeat resumed")
-                notify_sdn("worker_registered", worker["ip"])
+        w = workers.get(msg.get("worker"))
+        if w and w["connection"] is conn:                # ignore heartbeats from an old socket
+            w["last_seen"] = time.time()
+            if w["state"] == "offline":                  # hung worker woke up on the same socket
+                w["state"] = "slow" if w["stale_task"] else "idle"
+                metric("worker_recovered", worker=w["name"], note="heartbeat resumed")
+                notify_sdn("worker_registered", w["ip"])
         return None
+
     if kind == "done":
-        worker = workers.get(message.get("worker"))
-        task = task_book.get(message.get("task_id"))
-        if (worker and worker["connection"] is connection and worker["state"] == "slow"
-                and message.get("task_id") == worker["stale_task"]):
-            worker["state"] = "idle"             # slow worker finished its old task; result ignored
-            worker["stale_task"] = None
-            metric("worker_recovered", worker=worker["name"], note="finished stale task")
+        w = workers.get(msg.get("worker"))
+        t = book.get(msg.get("task_id"))
+        if (w and w["connection"] is conn and w["state"] == "slow"
+                and msg.get("task_id") == w["stale_task"]):
+            w["state"] = "idle"                          # it finished the old task, result is ignored
+            w["stale_task"] = None
+            metric("worker_recovered", worker=w["name"], note="finished stale task")
             return None
-        valid = (worker and task and worker["connection"] is connection and worker["state"] == "busy"
-                 and worker["current_task"] == task["task_id"] and task["status"] == "running"
-                 and task["worker"] == worker["name"] and message.get("attempt") == task["attempt"])
-        if valid:
-            task["status"] = "done"
-            task["finished_at"] = time.time()
-            worker["state"] = "idle"
-            worker["current_task"] = None
-            worker["completed"] += 1
-            metric("done", task["task_id"], worker["name"], f"attempt={task['attempt']}")
-            notify_sdn("worker_idle", worker["ip"], log=False)
+        # accept only if everything matches, incl. the attempt number
+        ok = (w and t and w["connection"] is conn and w["state"] == "busy"
+              and w["current_task"] == t["task_id"] and t["status"] == "running"
+              and t["worker"] == w["name"] and msg.get("attempt") == t["attempt"])
+        if ok:
+            t["status"] = "done"
+            t["finished_at"] = time.time()
+            w["state"] = "idle"
+            w["current_task"] = None
+            w["completed"] += 1
+            metric("done", t["task_id"], w["name"], f"attempt={t['attempt']}")
+            notify_sdn("worker_idle", w["ip"], log=False)
         return None
+
     if kind == "submit":
-        delay = float(message.get("delay", 0))
-        task_id = message.get("task_id")
-        if delay <= 0 or not task_id or task_id in task_book:
+        delay = float(msg.get("delay", 0))
+        tid = msg.get("task_id")
+        if delay <= 0 or not tid or tid in book:
             return {"type": "error", "message": "unique task id and positive delay required"}
-        task = {"task_id": task_id, "delay": delay, "status": "queued", "worker": "", "attempt": 1}
-        task_book[task_id] = task
-        tasks.put(task)
-        metric("queued", task_id, note=f"delay={delay}")
-        return {"type": "queued", "task_id": task_id}
+        t = {"task_id": tid, "delay": delay, "status": "queued", "worker": "", "attempt": 1}
+        book[tid] = t
+        tasks.put(t)
+        metric("queued", tid, note=f"delay={delay}")
+        return {"type": "queued", "task_id": tid}
+
     if kind == "status":
         keys = ("name", "state", "speed", "assigned", "completed")
-        return {"type": "status", "workers": [{key: w[key] for key in keys} for w in workers.values()]}
+        return {"type": "status", "workers": [{k: w[k] for k in keys} for w in workers.values()]}
+
     return {"type": "error", "message": "unknown message"}
 
 
-def client_thread(connection, address):
-    worker_name = None
+def conn_thread(conn, addr):
+    wname = None               # only workers send a "worker" field
     try:
-        with connection, connection.makefile("r") as reader:
-            for line in reader:
+        with conn, conn.makefile("r") as reader:
+            for line in reader:            # blocks until a full line, ends when peer disconnects
                 try:
-                    message = json.loads(line)
+                    msg = json.loads(line)
                     with lock:
-                        response = handle_message(connection, address, message)
-                        worker_name = message.get("worker", worker_name)
-                except (ValueError, TypeError, AttributeError) as error:
-                    response = {"type": "error", "message": f"bad message: {error}"}
-                if response:
-                    send_json(connection, response)
+                        resp = handle(conn, addr, msg)
+                        wname = msg.get("worker", wname)
+                except (ValueError, TypeError, AttributeError) as err:
+                    resp = {"type": "error", "message": f"bad message: {err}"}
+                if resp:
+                    send_json(conn, resp)
                 dispatch()
     except OSError:
         pass
     finally:
+        # connection ended = worker gone (if it didn't already reconnect on another socket)
         with lock:
-            worker = workers.get(worker_name)
-            if worker and worker["connection"] is connection:
-                fail_worker(worker, "connection closed")
+            w = workers.get(wname)
+            if w and w["connection"] is conn:
+                fail_worker(w, "connection closed")
         dispatch()
 
 
 def main():
-    global scheduler, sdn_host, metrics_file, metrics_writer
+    global sched, sdn_host, mfile, mwriter
     parser = argparse.ArgumentParser()
     parser.add_argument("--scheduler", choices=["adaptive", "round_robin"], default="adaptive")
-    parser.add_argument("--sdn-host", default="10.0.0.254", help="SDN manager IP ('' disables SDN events)")
+    parser.add_argument("--sdn-host", default="10.0.0.254", help="sdn manager ip, '' turns sdn events off")
     parser.add_argument("--metrics", default="metrics.csv")
     args = parser.parse_args()
-    scheduler, sdn_host = args.scheduler, args.sdn_host
-    metrics_file = Path(args.metrics).open("w", newline="")
-    metrics_writer = csv.writer(metrics_file)
-    metrics_writer.writerow(["timestamp", "event", "task_id", "worker", "note"])
+    sched, sdn_host = args.scheduler, args.sdn_host
+    mfile = Path(args.metrics).open("w", newline="")
+    mwriter = csv.writer(mfile)
+    mwriter.writerow(["timestamp", "event", "task_id", "worker", "note"])
 
-    threading.Thread(target=monitor_workers, daemon=True).start()
+    threading.Thread(target=watchdog, daemon=True).start()
     if sdn_host:
         threading.Thread(target=sdn_sender, daemon=True).start()
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
-        server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        server.bind(("0.0.0.0", PORT))
-        server.listen()
-        print(f"Server listening on port {PORT}; scheduler={scheduler}", flush=True)
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as srv:
+        srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)   # restart without waiting
+        srv.bind(("0.0.0.0", PORT))
+        srv.listen()
+        print(f"Server listening on port {PORT}; scheduler={sched}", flush=True)
         while True:
-            connection, address = server.accept()
-            threading.Thread(target=client_thread, args=(connection, address), daemon=True).start()
+            conn, addr = srv.accept()
+            threading.Thread(target=conn_thread, args=(conn, addr), daemon=True).start()
 
 
 if __name__ == "__main__":

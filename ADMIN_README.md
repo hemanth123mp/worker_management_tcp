@@ -1,4 +1,4 @@
- # Admin Guide - Topic 29 Worker System (branch `sub3`)
+# Admin Guide - Topic 29 Worker System (branch `sub3`)
 
 For the project team: read before the Mininet demo and the viva.
 
@@ -28,7 +28,7 @@ Everyone must understand the whole flow.
 | `sdn_manager.py` | TCP server on port 9999; installs / removes OpenFlow drop rules with `ovs-ofctl`; samples port stats |
 | `topology.py` | Mininet: 1 switch, 8 hosts, root-namespace link for the SDN manager; scenarios `burst`, `light`, `failure` |
 | `run_all.sh` | Runs 3 scenarios x 2 schedulers in Mininet, writes `results/summary.csv` |
-| `analyze_metrics.py` | Completed tasks, requeues, avg / p95 completion, makespan, tasks per worker |
+| `analyze_metrics.py` | Completed tasks, requeues, avg completion time, makespan, tasks per worker |
 | `local_test.py` | 21 checks without Mininet (loopback, SDN manager in dry-run) |
 
 ## 4. Demo flow (`sudo python3 topology.py --quarantine 20`)
@@ -64,7 +64,7 @@ sh python3 analyze_metrics.py metrics.csv
 ## 6. Evaluation: what to run and report
 
 ```bash
-sudo ./run_all.sh          # ~4 minutes, writes results/summary.csv
+sudo bash run_all.sh          # ~4 minutes, writes results/summary.csv
 ```
 
 Paste the table into section 7 of `README.md` (replace the loopback reference rows). Do not invent numbers.
@@ -105,9 +105,9 @@ concentrates work on the fastest worker.
 
 ## 9. Final checklist
 
-- [ ] Branch `sub3` pushed to GitHub (and merged into `main` if this is the final version).
+- [ ] Repo cloned in the VM's home folder (not the shared folder: it can be noexec / CRLF). Branch `sub3` pushed to GitHub (and merged into `main` if this is the final version).
 - [ ] The shared-folder / VM copy has the same files.
-- [ ] `sudo ./run_all.sh` run once in the VM; `results/summary.csv` pasted into the README.
+- [ ] `sudo bash run_all.sh` run once in the VM; `results/summary.csv` pasted into the README.
 - [ ] `sudo mn -c` before the live demo.
 - [ ] Screenshots: `dump-flows` with drop rules, `sdn_manager.log`, `server.log` showing `requeued`.
 - [ ] Every team member can explain sections 4 and 7.

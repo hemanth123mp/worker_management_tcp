@@ -11,7 +11,7 @@ hands them to registered workers, recovers from worker failures, and tells an **
 | --- | --- |
 | TCP task communication | `server.py`, `worker.py`, `client.py` (raw `socket`, newline-delimited JSON, port 5000, one thread per connection) |
 | Register worker nodes | `register` message (name + speed); server keeps a table of workers |
-| Assign tasks | `choose_idle_worker()` - `adaptive` (fastest idle worker) or `round_robin` (baseline) |
+| Assign tasks | `pick_worker()` - `adaptive` (fastest idle worker) or `round_robin` (baseline) |
 | Track worker workload | per worker: state (`idle`/`busy`/`slow`/`offline`), assigned, completed; `status` message |
 | Handle task timeouts | task running longer than `delay/speed + 3 s` is requeued; the slow worker is parked as `slow` (not blocked) until it reports back |
 | Detect worker failures | connection closed **or** no heartbeat for 3 s (covers crash and hang) |
@@ -93,7 +93,7 @@ Other options: `--scheduler round_robin`, `--scenario burst|light|failure`, `--n
 **Full evaluation in Mininet** (3 scenarios x 2 schedulers, about 4 minutes):
 
 ```bash
-sudo ./run_all.sh            # writes results/summary.csv and per-run metrics/SDN logs
+sudo bash run_all.sh            # writes results/summary.csv and per-run metrics/SDN logs
 ```
 
 **Tests without Mininet** (loopback, SDN manager in `--dry-run`; 21 checks and the same scenarios):
@@ -126,22 +126,32 @@ proposed = `adaptive` (fastest idle worker, ties -> fewer completed tasks).
 | `failure` | `light` load; worker1 crashes half-way through its 3rd task and restarts 5 s later |
 
 **Reference results (loopback run of `local_test.py`, no Mininet).** Replace with the values from
-`results/summary.csv` produced by `sudo ./run_all.sh`.
+`results/summary.csv` produced by `sudo bash run_all.sh`.
 
-| Scenario | Scheduler | Avg completion (s) | p95 (s) | Makespan (s) | Requeued | Tasks per worker |
-| --- | --- | --- | --- | --- | --- | --- |
-| burst | adaptive | 2.40 | 5.00 | 17.01 | 0 | w1:10 w2:6 w3:4 |
-| burst | round_robin | 2.41 | 5.00 | 17.00 | 0 | w1:10 w2:6 w3:4 |
-| light | adaptive | 1.00 | 1.01 | 29.51 | 0 | w1:20 |
-| light | round_robin | 2.25 | 4.00 | 30.51 | 0 | w1:7 w2:7 w3:6 |
-| failure | adaptive | 1.35 | 4.00 | 29.50 | 1 | w1:16 w2:3 w3:1 |
-| failure | round_robin | 2.38 | 4.00 | 31.01 | 1 | w1:6 w2:8 w3:6 |
+| Scenario | Scheduler | Avg completion (s) | Makespan (s) | Requeued | Tasks per worker |
+| --- | --- | --- | --- | --- | --- |
+| burst | adaptive | 2.45 | 16.02 | 0 | w1:10 w2:6 w3:4 |
+| burst | round_robin | 2.45 | 16.01 | 0 | w1:10 w2:6 w3:4 |
+| light | adaptive | 1.00 | 29.51 | 0 | w1:20 |
+| light | round_robin | 2.25 | 30.51 | 0 | w1:7 w2:7 w3:6 |
+| failure | adaptive | 1.35 | 29.52 | 1 | w1:16 w2:3 w3:1 |
+| failure | round_robin | 2.40 | 31.01 | 1 | w1:6 w2:8 w3:6 |
 
 Reading the results:
 - When every worker is already busy (`burst`) both schedulers behave the same: there is no choice to make.
 - When load is below capacity (`light`, `failure`) `adaptive` sends work to the fastest idle worker, so average completion time is about 2.2x (light) and 1.8x (failure) lower than `round_robin`.
 - Both schedulers complete all 20 tasks after a crash: the task is requeued once and the worker returns after its quarantine.
 - The price of `adaptive`: at light load it uses only the fastest worker (`w1:20`), so the work is not spread out.
+
+Metrics (all computed by `analyze_metrics.py` from `metrics.csv`):
+
+| Metric | Meaning |
+| --- | --- |
+| completed | Tasks finished and accepted (should be 20 of 20) |
+| requeued | Times a task went back to the queue after a failure or timeout |
+| avg completion | Mean of (finish time minus submission time) per task |
+| makespan | First submission to last completion |
+| tasks per worker | How the work was spread across workers |
 
 ## 8. Limitations
 

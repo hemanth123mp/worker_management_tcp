@@ -1,9 +1,7 @@
-"""Local tests WITHOUT Mininet (127.0.0.1, SDN manager in --dry-run mode).
-
-Runs the functional tests (T1-T6) and the same scenarios as topology.py, and writes
-results/summary_local.csv.   Usage: python3 local_test.py [--quick]
-Keep SCENARIOS / WORKERS in sync with topology.py.
-"""
+# tests without mininet: everything on 127.0.0.1, sdn manager in --dry-run mode
+# runs T1-T4 plus the same scenarios as topology.py and writes results/summary_local.csv
+#   python3 local_test.py [--quick]      (--quick = only T1-T4)
+# SCENARIOS and WORKERS must match topology.py
 
 import csv
 import os
@@ -17,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 PY = sys.executable
-# scenario -> (seconds between a client's tasks, start offset between clients, crash worker1?)
+# scenario -> (secs between a client's tasks, start offset between clients, crash worker1?)
 SCENARIOS = {"burst": (3, 0, False), "light": (6, 1.5, False), "failure": (6, 1.5, True)}
 TASKS_PER_CLIENT, TASK_DELAY = 5, 2
 WORKERS = [("worker1", 2.0), ("worker2", 1.0), ("worker3", 0.5)]

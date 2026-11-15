@@ -1,0 +1,5 @@
+# keep unix line endings so scripts run on ubuntu
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
