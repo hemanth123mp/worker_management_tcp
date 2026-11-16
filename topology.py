@@ -75,7 +75,7 @@ def run(args):
     h[1].cmd(f"python3 server.py --scheduler {args.scheduler} > server.log 2>&1 &")
     time.sleep(1)
     for n, (name, speed) in WORKERS.items():
-        extra = " --fail-on-task 3 --restart-after 5" if (crash and name == "worker1") else ""
+        extra = " --fail-on-task 3 --restart-after 5" if (crash and (name == "worker1" or name=="worker2")) else ""
         h[n].cmd(f"python3 worker.py 10.0.0.1 {name} --speed {speed}{extra} > {name}.log 2>&1 &")
     time.sleep(2)      # let all 3 register first
     for i, (n, name) in enumerate(CLIENTS.items()):

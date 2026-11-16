@@ -1,0 +1,73 @@
+timestamp,event,task_id,worker,note
+1794849692.881,registered,,worker3,10.0.0.8 speed=0.5
+1794849692.882,sdn_notification,,10.0.0.8,worker_registered
+1794849692.884,registered,,worker2,10.0.0.7 speed=1.0
+1794849692.885,sdn_notification,,10.0.0.7,worker_registered
+1794849692.886,registered,,worker1,10.0.0.6 speed=2.0
+1794849692.886,sdn_notification,,10.0.0.6,worker_registered
+1794849694.9,queued,client1-t1,,delay=2.0
+1794849694.901,assigned,client1-t1,worker1,attempt=1
+1794849695.94,done,client1-t1,worker1,attempt=1
+1794849696.404,queued,client2-t1,,delay=2.0
+1794849696.404,assigned,client2-t1,worker2,attempt=1
+1794849697.903,queued,client3-t1,,delay=2.0
+1794849697.904,assigned,client3-t1,worker3,attempt=1
+1794849698.405,done,client2-t1,worker2,attempt=1
+1794849699.441,queued,client4-t1,,delay=2.0
+1794849699.442,assigned,client4-t1,worker1,attempt=1
+1794849700.445,done,client4-t1,worker1,attempt=1
+1794849700.904,queued,client1-t2,,delay=2.0
+1794849700.904,assigned,client1-t2,worker2,attempt=1
+1794849701.905,done,client3-t1,worker3,attempt=1
+1794849702.421,queued,client2-t2,,delay=2.0
+1794849702.423,assigned,client2-t2,worker3,attempt=1
+1794849702.94,done,client1-t2,worker2,attempt=1
+1794849703.905,queued,client3-t2,,delay=2.0
+1794849703.906,assigned,client3-t2,worker1,attempt=1
+1794849704.408,requeued,client3-t2,worker1,connection closed
+1794849704.409,worker_failed,,worker1,connection closed
+1794849704.41,sdn_notification,,10.0.0.6,worker_failed
+1794849704.411,assigned,client3-t2,worker2,attempt=2
+1794849705.443,queued,client4-t2,,delay=2.0
+1794849706.412,done,client3-t2,worker2,attempt=2
+1794849706.413,assigned,client4-t2,worker2,attempt=1
+1794849706.425,done,client2-t2,worker3,attempt=1
+1794849706.906,queued,client1-t3,,delay=2.0
+1794849706.907,assigned,client1-t3,worker3,attempt=1
+1794849708.418,done,client4-t2,worker2,attempt=1
+1794849708.429,queued,client2-t3,,delay=2.0
+1794849708.429,assigned,client2-t3,worker2,attempt=1
+1794849709.908,queued,client3-t3,,delay=2.0
+1794849710.431,done,client2-t3,worker2,attempt=1
+1794849710.432,assigned,client3-t3,worker2,attempt=1
+1794849710.925,done,client1-t3,worker3,attempt=1
+1794849711.478,queued,client4-t3,,delay=2.0
+1794849711.479,assigned,client4-t3,worker3,attempt=1
+1794849712.433,done,client3-t3,worker2,attempt=1
+1794849712.913,queued,client1-t4,,delay=2.0
+1794849712.914,assigned,client1-t4,worker2,attempt=1
+1794849713.456,registered,,worker1,10.0.0.6 speed=2.0
+1794849713.457,sdn_notification,,10.0.0.6,worker_registered
+1794849714.433,queued,client2-t4,,delay=2.0
+1794849714.435,assigned,client2-t4,worker1,attempt=1
+1794849714.924,done,client1-t4,worker2,attempt=1
+1794849715.437,done,client2-t4,worker1,attempt=1
+1794849715.482,done,client4-t3,worker3,attempt=1
+1794849715.919,queued,client3-t4,,delay=2.0
+1794849715.92,assigned,client3-t4,worker2,attempt=1
+1794849717.483,queued,client4-t4,,delay=2.0
+1794849717.484,assigned,client4-t4,worker3,attempt=1
+1794849717.924,done,client3-t4,worker2,attempt=1
+1794849718.916,queued,client1-t5,,delay=2.0
+1794849718.917,assigned,client1-t5,worker1,attempt=1
+1794849719.921,done,client1-t5,worker1,attempt=1
+1794849720.437,queued,client2-t5,,delay=2.0
+1794849720.438,assigned,client2-t5,worker2,attempt=1
+1794849721.489,done,client4-t4,worker3,attempt=1
+1794849721.924,queued,client3-t5,,delay=2.0
+1794849721.925,assigned,client3-t5,worker3,attempt=1
+1794849722.509,done,client2-t5,worker2,attempt=1
+1794849723.487,queued,client4-t5,,delay=2.0
+1794849723.488,assigned,client4-t5,worker1,attempt=1
+1794849724.491,done,client4-t5,worker1,attempt=1
+1794849725.926,done,client3-t5,worker3,attempt=1
